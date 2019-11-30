@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.jaemo.jaemo.customer.drawer_fragments.pickup.PickupFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_pickup" />
+
+    <fragment
+        android:id="@+id/nav_your_rides"
+        android:name="com.jaemo.jaemo.customer.drawer_fragments.your_rides.YourRidesFragment"
+        android:label="@string/menu_your_rides"
+        tools:layout="@layout/fragment_your_rides" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.jaemo.jaemo.customer.drawer_fragments.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.jaemo.jaemo.customer.drawer_fragments.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.jaemo.jaemo.customer.drawer_fragments.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.jaemo.jaemo.customer.drawer_fragments.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+</navigation>

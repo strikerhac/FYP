@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">FYP</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Select Pickup</string>
+    <string name="menu_your_rides">Your Rides</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="pickup_title">Select Pickup</string>
+    <string name="dropoff_title">Select Dropoff</string>
+    <string name="customer_info_title">Student/Customer Details</string>
+    <string name="confirm_pickup">Confirm Pickup</string>
+    <string name="confirm_dropoff">Confirm Drop off</string>
+    <string name="oneway">One Way</string>
+    <string name="twoway">Two Way</string>
+    <string name="pickup_loc">Pickup Location...</string>
+    <string name="start_time">School Starting Time...</string>
+    <string name="dropoff_loc">Drop off Location...</string>
+    <string name="end_time">School Ending Time...</string>
+    <string name="first_name">First Name...</string>
+    <string name="last_name">Last Name...</string>
+    <string name="age">Age...</string>
+    <string name="gender">gender...</string>
+    <string name="find_driver">Find Driver</string>
+    <string name="find_driver_again">Find Driver Again</string>
+    <string name="book_route">Book Route</string>
+
+</resources>

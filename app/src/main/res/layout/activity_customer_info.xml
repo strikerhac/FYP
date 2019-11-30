@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customer_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="customer_info"
+    android:fitsSystemWindows="true">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapview"
+        tilesource="Mapnik"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/AppTheme.AppBarOverlay" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="320sp"
+        android:layout_height="55sp"
+        android:background="@drawable/curved_corner_rectangle"
+        android:hint="@string/first_name"
+        android:paddingStart="35sp"
+        android:paddingLeft="35sp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="320sp"
+        android:layout_height="55sp"
+        android:background="@drawable/curved_corner_rectangle"
+        android:hint="@string/last_name"
+        android:onClick="chooseTime"
+        android:paddingStart="35sp"
+        android:paddingLeft="35sp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="320sp"
+        android:layout_height="55sp"
+        android:background="@drawable/curved_corner_rectangle"
+        android:hint="@string/age"
+        android:onClick="chooseTime"
+        android:paddingStart="35sp"
+        android:paddingLeft="35sp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="320sp"
+        android:layout_height="55sp"
+        android:background="@drawable/curved_corner_rectangle"
+        android:hint="@string/gender"
+        android:onClick="chooseTime"
+        android:paddingStart="35sp"
+        android:paddingLeft="35sp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="320sp"
+        android:layout_height="50sp"
+        android:background="@drawable/theme_rectangle"
+        android:onClick="findDriver"
+        android:text="@string/find_driver"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
